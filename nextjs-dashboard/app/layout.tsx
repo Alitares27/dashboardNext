@@ -1,12 +1,15 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import { Metadata } from 'next';
+import SideNav from '@/app/ui/dashboard/sidenav';
 
 export const metadata: Metadata = {
   title: 'Acme Dashboard',
   description: 'The official Next.js Course Dashboard, built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
+
+export const experimental_ppr = true;
 
 export default function RootLayout({
   children,
